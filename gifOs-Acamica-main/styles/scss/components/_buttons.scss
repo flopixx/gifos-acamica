@@ -1,0 +1,31 @@
+.btn {
+  @include link(uppercase);
+  margin: $m-48 auto;
+  padding: $p-1 $p-25;
+  width: auto;
+  border: 1px solid $main-color;
+  border-radius: 1.9rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  transition: all 0.2s ease-in;
+}
+
+.social {
+  width: 5.6rem;
+  margin: 0 auto;
+  @include flexbox(column, center);
+
+  &__icons {
+    width: 100%;
+    @include flexbox(row, space-between);
+    margin-top: $m-15;
+    margin-bottom: $m-3;
+
+    i {
+      color: $footer-links-color;
+      font-size: 1.13rem;
+    }
+  }
+}

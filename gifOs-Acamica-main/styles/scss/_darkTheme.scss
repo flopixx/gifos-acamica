@@ -1,0 +1,101 @@
+.dark {
+  background-color: $dark-back-color;
+  color: $light-color;
+
+  i {
+    color: $light-color;
+  }
+
+  .text {
+    color: $light-color;
+  }
+
+  .navbar {
+    background-color: $dark-back-color;
+  }
+
+  .navbar,
+  .footer {
+    border-color: $darker-back-color;
+  }
+
+  .menu {
+    background-color: $darker-back-color;
+
+    &__item {
+      a {
+        color: $light-color;
+      }
+    }
+  }
+
+  .search {
+    border-color: $light-color;
+    caret-color: $light-color;
+
+    &__input {
+      color: $light-color;
+    }
+
+    i {
+      color: $light-color;
+    }
+  }
+
+  .modal {
+    background: rgba(34, 35, 38, 0.9);
+
+    &__text {
+      color: $light-color;
+    }
+  }
+
+  .btn,
+  .button {
+    border-color: $light-color;
+    color: $light-color;
+
+    &:hover {
+      background-color: $light-color;
+      color: $dark-back-color;
+    }
+  }
+
+  .step {
+    border-color: $light-color;
+    color: $light-color;
+  }
+
+  .step_now {
+    background-color: $light-color;
+    color: $dark-back-color;
+  }
+
+  .trending {
+    background-color: $darker-back-color;
+  }
+
+  .small_text {
+    color: $light-color;
+  }
+
+  .prev,
+  .next {
+    background-color: $light-color;
+    color: $darker-back-color;
+
+    &:hover {
+      background-color: $darker-back-color;
+      color: $light-color;
+      border-color: $light-color;
+    }
+  }
+
+  .social__icons {
+    i {
+      &:hover {
+        color: $light-color;
+      }
+    }
+  }
+}

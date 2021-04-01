@@ -1,0 +1,14 @@
+.trending {
+  background-color: $light-back-color;
+  padding: $p-1 $p-15;
+  text-align: center;
+
+  .section_title {
+    margin-top: $m-2;
+  }
+
+  .text {
+    color: $dark-color;
+    margin-bottom: $m-2;
+  }
+}

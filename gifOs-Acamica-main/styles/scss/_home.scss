@@ -1,0 +1,35 @@
+.hero {
+  padding: $p-1 $p-15;
+  text-align: center;
+
+  .main_title {
+    margin-bottom: $m-2;
+  }
+}
+
+.welcome {
+  width: $first-img-mob-size;
+  display: block;
+  margin: $margin-center;
+}
+
+.trending {
+  &__topics {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: $margin-center;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: $m-2;
+  }
+
+  &__links {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    display: inline;
+  }
+}

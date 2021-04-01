@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $light-color;
+  color: $main-color;
+  font-family: $main-font;
+  font-size: 16px;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+input #checkbox {
+  display: none;
+}
+
+
+/**Mixins**/
+
+@mixin titles($size, $line, $weight) {
+  font-family: $title-font;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+  text-align: center;
+}
+
+@mixin texts($size, $line) {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin link($transform) {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.94rem;
+  line-height: 1.88rem;
+  text-transform: $transform;
+  letter-spacing: 0;
+}
+
+@mixin link-desk {
+  &:hover {
+    color: $secondary-color;
+  }
+
+  &:active {
+    color: $grey-btn-color;
+  }
+}
+
+@mixin flexbox($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+.main_title {
+  @include titles(1.56rem, 2.06rem, 700);
+}
+
+.section_title {
+  @include titles(1.25rem, 1.88rem, 700);
+}
+
+.trending__title {
+  @include titles(1rem, 1.56rem, 700);
+}
+
+.no_results_title {
+  @include titles(1.2rem, 1.8rem, 700);
+  color: $secondary-color;
+}
+
+.text {
+  @include texts(1rem, 1.44rem);
+}
+
+.counter_text {
+  @include titles(0.94rem, 1.38, 700);
+}
+
+.trending__links {
+  @include titles(0.88rem, 1.56rem, 500);
+}
+
+.small_text {
+  @include texts(0.88rem, 1.25rem);
+}
+
+.break {
+  font-size: 0;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+  
+}
+
+.visible {
+  visibility: visible;
+}
+
+
+.turquoise {
+  color: $secondary-color;
+}

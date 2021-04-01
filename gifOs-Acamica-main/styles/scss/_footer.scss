@@ -1,0 +1,9 @@
+.footer {
+  @include flexbox(column, space-evenly);
+  padding: $p-15;
+  border-bottom: 0.31rem solid $main-color;
+
+  .small_text {
+    color: $dark-color;
+  }
+}

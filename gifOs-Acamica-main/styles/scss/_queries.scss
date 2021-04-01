@@ -1,0 +1,226 @@
+/*TABLET*/
+@import "_base.scss";
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: $p-1 $p-3;
+  }
+
+  .logo {
+    width: $logo-desk-size;
+  }
+
+  .menu {
+    @include flexbox(row, space-between);
+    visibility: visible;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+
+    &__item {
+      padding: 0;
+      margin: 0 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        color: $main-color;
+        text-transform: uppercase;
+      }
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+
+  .dark {
+    .menu {
+      background-color: transparent;
+    }
+  }
+
+  .break {
+    display: none;
+  }
+
+  .hero {
+    padding: $p-1;
+
+    .main_title {
+      max-width: $text-size;
+      margin: $margin-center;
+    }
+  }
+
+  .welcome {
+    width: $first-img-desk-size;
+    margin-top: $m-15;
+  }
+
+  .search {
+    width: $text-size;
+    margin: $margin-center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, 20%);
+    margin-top: 2.25rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: $p-1 $p-2;
+    padding: $m-5 auto;
+    width: auto;
+  }
+
+  .trending__topics {
+    width: 25.13rem;
+  }
+
+  .modal {
+    margin: auto;
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 900px) {
+  .main_title {
+    @include titles(2.19rem, 3.13rem, 700);
+  }
+
+  .section_title {
+    @include titles(1.56rem, 1.88rem, 700);
+  }
+
+  .trending__title {
+    @include titles(1.13rem, 1.56rem, 700);
+  }
+
+  .text {
+    @include texts(1.13rem, 1.44rem);
+  }
+
+  .trending__links {
+    @include titles(1rem, 1.56rem, 500);
+  }
+
+  .small_text {
+    @include texts(0.88rem, 1.25rem);
+  }
+
+  .btn,
+  .button {
+    &:hover {
+      background-color: $main-color;
+      color: $light-color;
+    }
+  }
+
+  .menu {
+    padding: 0;
+    background-color: inherit;
+
+    &__item {
+      &:hover {
+        border-bottom: 2px solid $secondary-color;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        display: block;
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        &:active {
+          color: $grey-btn-color;
+        }
+      }
+    }
+  }
+
+  .trendslider {
+    width: 80%;
+    height: 17.19rem;
+
+    &__slider {
+      width: 21.6rem * 6;
+      height: 17.19rem;
+    }
+
+    .gifo {
+      width: 20.6rem;
+      height: 100%;
+
+      &:hover {
+        .gifo__hover {
+          opacity: 0.6;
+        }
+      }
+
+      img {
+        width: 20.6rem;
+        height: 100%;
+      }
+    }
+  }
+
+  .prev,
+  .next {
+    display: block;
+  }
+
+  .gifo {
+    &:hover {
+      .gifo__hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .footer {
+    @include flexbox(row, space-between);
+    padding: $p-3 $p-9;
+  }
+
+  .social {
+    margin: 0;
+    @include flexbox(row, space-between);
+    width: 20%;
+    padding: 0;
+
+    &__icons {
+      width: 50%;
+      margin: 0;
+
+      i {
+        margin: 0 $m-05;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .navbar {
+    padding: $p-15 $p-9;
+  }
+}
